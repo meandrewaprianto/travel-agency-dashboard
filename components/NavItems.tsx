@@ -25,7 +25,7 @@ const NavItems = ( {handleClick }: {handleClick?: () => void}) => {
                         <NavLink to={href} key={id}>
                             {({ isActive }: { isActive: boolean}) => (
                                 <div className={cn('group nav-item', {
-                                    'bg-primary-100 !text-white': isActive
+                                    'bg-primary-100 !text-white ': isActive
                                 })} onClick={handleClick}>
                                     <img
                                         src={icon}
