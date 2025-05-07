@@ -9,7 +9,7 @@ export async function clientLoader(){
     try {
         const user = await account.get();
 
-        if(!user.$id) return redirect('/sign-in');
+        // if(!user.$id) return redirect('/sign-in');
 
         const existingUser = await getExistingUser(user.$id);
         // if(existingUser?.status === 'user') {
